@@ -133,14 +133,14 @@
         </div>
     </div>
 
-    <div class="card">
-        <img src="img/Video.jpg" class="video-thumbnail img-fluid" alt="video-thumbnail" height="100%">
-        <div class="card-img-overlay video-overlay">
+    <div class="card border-0">
+        <img src="img/Video.jpg" class="video-thumbnail img-fluid" alt="video-thumbnail" style="max-height: 675px; filter: brightness(0.5);">
+        <div class="card-img-overlay video-overlay d-flex flex-column justify-content-center align-items-center">
             <h1 class="card-title">Savurează cea mai proaspătă</h1>
             <h1 class="card-title">bere nepasteurizată</h1>
             <h1 class="card-title">CHIȘINĂU LA TANK</h1>
                 <div class="card-button-play">
-                    <img src="img/play.svg" alt="play">
+                    <img src="img/play.svg" alt="play" style="padding-top: 10px;" class="play-icon">
                 </div>
         </div> 
     </div>
@@ -395,7 +395,7 @@
     }
 
     @media (max-width: 880px) {
-        .card-bere-overlay h1{
+        .card-bere-overlay h1 {
             font-size: 1.5rem;
         }
 
@@ -414,7 +414,14 @@
             align-items: normal;
         }
 
-        
+        .play-icon {
+            height: 55px;
+        }
+
+        .video-overlay .card-title {
+        font-size: 27px  !important;
+    }
+      
     }
 
     @media (max-width: 400px) {
@@ -523,8 +530,18 @@
     .video-overlay .card-title {
         color: white;
         font-family: Montserrat;
-        font-size: 70px;
+        font-size: 60px;
         font-weight: 600;
+        text-align: center;
+    }
+
+    .play-icon {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .play-icon:hover {
+        transform: translateY(-10px);
     }
 
 </style>
