@@ -133,12 +133,12 @@
         </div>
     </div>
 
-    <div class="card border-0">
-        <img src="img/Video.png" class="video-thumbnail img-fluid" alt="video-thumbnail" style="filter: brightness(0.5);">
-        <div class="card-img-overlay video-overlay d-flex flex-column justify-content-center align-items-center">
-            <h1 class="card-title">Savurează cea mai proaspătă</h1>
-            <h1 class="card-title">bere nepasteurizată</h1>
-            <h1 class="card-title">CHIȘINĂU LA TANK</h1>
+    <div class="video-overlay-card">
+        <!--<img src="img/Video.png" class="video-thumbnail img-fluid" alt="video-thumbnail" style="filter: brightness(0.5); max-height: 675px;">-->
+        <div class=" video-overlay d-flex flex-column justify-content-center align-items-center" style="padding-top: 60px; padding-bottom: 60px;">
+            <h1 class="">Savurează cea mai proaspătă</h1>
+            <h1 class="">bere nepasteurizată</h1>
+            <h1 class="">CHIȘINĂU LA TANK</h1>
                 <div class="card-button-play">
                     <img src="img/play.svg" alt="play" style="padding-top: 10px;" class="play-icon">
                 </div>
@@ -235,7 +235,7 @@
             <div>
             <img src="img/logo-tank.svg" alt="logo-tank" width="104px" height="69px">
         </div>
-            <div class="container d-flex justify-content-end align-items-baseline" style="gap: 15px;">
+            <div class="container d-flex justify-content-end align-items-baseline flex-wrap" style="gap: 15px;">
                 <p class="footer-follow-text" style="margin-top: 16px; margin-bottom: 0;">Urmāreşte-ne: </p>
                 <div class="d-flex" style="gap: 15px;">
                 <a href="https://www.facebook.com/berechisinau/" target="_blank">
@@ -395,6 +395,11 @@
     }
 
     @media (max-width: 880px) {
+
+        .card-bere-overlay {
+            padding-top: 30px;
+        }
+        
         .card-bere-overlay h1 {
             font-size: 1.5rem;
         }
@@ -422,6 +427,10 @@
         font-size: 27px  !important;
     }
       
+        .video-thumbnail {
+            height: 260px;
+        }
+
     }
 
     @media (max-width: 400px) {
@@ -495,7 +504,8 @@
     @media (max-width: 990px) {
         .journey-container{
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             gap: 150px;
         }
 
@@ -527,10 +537,9 @@
         cursor: pointer;
     }
 
-    .video-overlay .card-title {
+    .video-overlay  h1{
         color: white;
         font-family: Montserrat;
-        font-size: 60px;
         font-weight: 600;
         text-align: center;
     }
@@ -543,6 +552,12 @@
     .play-icon:hover {
         transform: translateY(-10px);
     }
+
+    .video-overlay-card {
+        background-image: url("img/Video.png");
+        background-size: cover;
+    }
+    
 
 </style>
 
