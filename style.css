@@ -1,0 +1,424 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+.modal-dialog {
+    max-width: 1200px!important;
+    margin: 30px auto!important;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.modal-body {
+    position:relative;
+    padding:0px;
+}
+
+.modal-body .button-video {
+    position:absolute;
+    right:-30px;
+    top:0;
+}
+
+.header {
+    background-color: #042e73;
+    padding: 15px 0;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.header-container {
+    max-width: 1500px;
+}
+
+
+
+
+.header nav .logo {
+    width: 175px;
+    margin-left: 10px;
+}
+
+.page-links {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 12px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.page-links:hover {
+    color: #fcb53b;
+    text-decoration: none;
+    border-bottom: 1px solid #FCB53B;
+}
+
+.menu-mobile .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.menu-mobile .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.menu-mobile .show{
+    width: 83%;
+}
+
+.offcanvas-body {
+    background-color: #042E73;
+}
+
+.offcanvas-header {
+    background-color: #042E73;
+}
+
+.offcanvas-body a{
+    width: 100%;
+    display: block;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.offcanvas-header .btn-close {
+    opacity: inherit;
+}
+
+@media (min-width: 992px) {
+    .menu-mobile .navbar-toggler-icon, .menu-follow-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-efes-custom {
+        display: none;
+    }
+}
+
+.bere-cover .card-bere-overlay {
+    max-width: 1500px;
+}
+
+.card-bere-overlay h1{
+    color: white;
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.card-bere-overlay h4{
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.card-button {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 24px 20px 24px;
+    border: 1px solid #ffffff;
+    background-color: #FFFFFF1A;
+    color: white;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.82px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.card-button:hover {
+    transform: translateY(-10px);
+}
+
+.about-bere p{
+    color: #042e73;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+}
+
+.card-button-container {
+    padding-top: 24px;
+}
+
+@media (max-width: 880px) {
+
+    .card-bere-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-bere-overlay h4{
+        font-size: 1rem;
+        padding-top: 0;
+    }
+
+    .card-button {
+        font-size: 1rem;
+        padding: 9px;
+    }
+
+    .card-button-container {
+        padding-top: 10px;
+        align-items: normal;
+    }
+
+    .play-icon {
+        height: 55px;
+    }
+
+    .video-overlay .card-title {
+        font-size: 27px  !important;
+    }
+  
+    .video-thumbnail {
+        height: 260px;
+    }
+
+}
+
+.video-overlay{
+    position: relative;
+    padding-top: 150px; 
+    padding-bottom: 150px;
+}
+
+.video-overlay:before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+@media (max-width: 400px) {
+    .card .card-img {
+        height: 220px;
+    }
+}
+
+.journey-base {
+    background-color: #042E73; 
+    margin-bottom: 110px;
+}
+
+.journey-base .journey-base-container {
+    max-width: 1500px ;
+}
+
+.journey-container {
+    padding-bottom: 139px;
+}
+
+.journey-items {
+    gap: 40px; 
+    max-width: 287px;
+}
+
+.journey-title {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 139px;
+    padding-bottom: 74px;
+}
+
+.factory-text {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+.map-title {
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 43.88px;
+    text-align: center;
+    margin-bottom: 74px;
+}
+
+.familia-title {
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 74px;
+}
+
+.familia-text {
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 21.94px;
+    text-align: center;
+}
+
+.custom-familia-container {
+    max-width: 1500px;
+}
+
+.custom-bere-container {
+    padding-top: 34px; 
+    padding-bottom: 34px;
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.custom-bere-container:hover {
+    box-shadow: 0px 5px 15px 0px #00000014;
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    
+    .journey-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .arrow-journey {
+        display: none;
+    }
+
+    .custom-familia-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media (min-width: 726px) {
+
+    .down-arrow {
+        display: none;
+    }
+}
+
+.custom-bere-container a{
+    color: black;
+    text-decoration: none;
+}
+
+.factory-icon, .auto-icon, .tanks-icon, .mug-icon {
+    transition: transform 0.3s ease;
+}
+
+.factory-icon:hover, .auto-icon:hover, .tanks-icon:hover, .mug-icon:hover {
+    transform: translateY(-10px);
+}
+
+.card-button-icon {
+    cursor: pointer;
+}
+
+.video-overlay  h1{
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    text-align: center;
+}
+
+.play-icon {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.play-icon:hover {
+    transform: translateY(-10px);
+}
+
+.video-overlay-card {
+    background-image: url("img/Video3.png");
+    background-size: cover;
+    background-position: center center; 
+}
+
+.bere-cover {
+    background-image: url("img/cover-card-bere.png");
+    background-size: cover;
+    background-position: center center; 
+}
+
+@media (min-width: 880px) {
+    .bere-cover{
+        height: 675px;
+    }
+}
+
+.socials-logo {
+    gap: 15px;
+}
+
+.menu-follow-mobile {
+    gap: 15px;
+}
+
+.about-bere-container {
+    max-width: 1085px;
+    margin-bottom: 108px;
+    margin-top: 108px;
+}
+
+.map-container {
+    margin-bottom: 110px;
+}
+
+.familia-base-container {
+    margin-bottom: 110px;
+}
+
+.footer-container {
+    height: 168px; 
+    background-color: #042E73;
+}
+
+.footer-items {
+    max-width: 1500px;
+}
+
+.footer-follow-items {
+    gap: 15px;
+}
+
+.footer-follow-text {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    margin-top: 16px;
+}
+
+.footer-logo-items {
+    gap: 15px;
+}
